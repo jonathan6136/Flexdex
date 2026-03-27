@@ -1,0 +1,280 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Flexdex
+meta:
+  id: wrk_52e60528238d49e9a98b36910bbbf100
+  created: 1774608671360
+  modified: 1774608671360
+  description: ""
+collection:
+  - name: Menbre
+    meta:
+      id: fld_d27bebf7cee5485eb9c6c95436db18dc
+      created: 1774608701189
+      modified: 1774608701189
+      sortKey: -1774608701189
+      description: ""
+    children:
+      - url: api/auth/sign-up
+        name: New Request
+        meta:
+          id: req_652ce2d952574b82be7905bfb2912fea
+          created: 1774608706298
+          modified: 1774608817282
+          isPrivate: false
+          description: ""
+          sortKey: -1774608761485
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: api/auth/sign-in
+        name: New Request
+        meta:
+          id: req_763f1175b9d14931a7d7663ca0cb6026
+          created: 1774608776135
+          modified: 1774608812722
+          isPrivate: false
+          description: ""
+          sortKey: -1774608761585
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: api/users/me
+        name: New Request
+        meta:
+          id: req_919b740ce9cc4328ac8b6f49bcda7228
+          created: 1774608880609
+          modified: 1774608905203
+          isPrivate: false
+          description: ""
+          sortKey: -1774608761685
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: api/spaces
+        name: New Request
+        meta:
+          id: req_f55548cdd31b4857b709f4b3cbe593f5
+          created: 1774608936754
+          modified: 1774608958427
+          isPrivate: false
+          description: ""
+          sortKey: -1774608936754
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: api/spaces/:id
+        name: New Request
+        meta:
+          id: req_273f5d0e53284de49a95b77757b39ef7
+          created: 1774608939447
+          modified: 1774608983252
+          isPrivate: false
+          description: ""
+          sortKey: -1774608939447
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: ""
+  - name: Reservations
+    meta:
+      id: fld_2137a0a2378e44c2bc4f869b8a495225
+      created: 1774609029658
+      modified: 1774609029658
+      sortKey: -1774609029658
+      description: ""
+    children:
+      - url: api/bookings/:id
+        name: New Request
+        meta:
+          id: req_70b16c50be724c13984f3b48f5937b10
+          created: 1774609038277
+          modified: 1774609197997
+          isPrivate: false
+          description: ""
+          sortKey: -1774609038277
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: ""
+      - url: api/bookings/:id
+        name: New Request
+        meta:
+          id: req_d3a3ea46ec104cce8cac57473bb4e653
+          created: 1774609040890
+          modified: 1774609174083
+          isPrivate: false
+          description: ""
+          sortKey: -1774609040890
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: ""
+      - url: api/bookings
+        name: New Request
+        meta:
+          id: req_2986b609b5bd4ab0a04a45ea3d1b5841
+          created: 1774609045377
+          modified: 1774609142515
+          isPrivate: false
+          description: ""
+          sortKey: -1774609045377
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: api/bookings/:id
+        name: New Request
+        meta:
+          id: req_2ef3708cec924761bf2df716246c0f8f
+          created: 1774609047656
+          modified: 1774609111633
+          isPrivate: false
+          description: ""
+          sortKey: -1774609047656
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: id
+            value: ""
+      - url: api/bookings
+        name: New Request
+        meta:
+          id: req_e2150c3be7a1412d8000e0fafce6751b
+          created: 1774609049686
+          modified: 1774609075561
+          isPrivate: false
+          description: ""
+          sortKey: -1774609049686
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d42e305515495d5b1850ef83705a5a08a997ee90
+    created: 1774608671365
+    modified: 1774608671365
+environments:
+  name: Base Environment
+  meta:
+    id: env_d42e305515495d5b1850ef83705a5a08a997ee90
+    created: 1774608671363
+    modified: 1774608671363
+    isPrivate: false
